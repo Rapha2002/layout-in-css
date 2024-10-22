@@ -6,6 +6,55 @@
     <title>Basic Layout 9</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+
+body {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap:  10px ;
+        }
+
+        header {
+          grid-row-start: 1;
+          grid-row-end: 4;
+          grid-column-start: 1 ;
+          grid-column-end: 4;
+ 
+        }
+
+        nav {
+          
+          grid-row-start: 1;
+          grid-row-end: 4;
+          grid-column-start: 4 ;
+          grid-column-end: 13;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 100px
+        }
+
+        nav a {
+          text-decoration: none;
+          font-size: 35px;
+          padding: 10px 20px;
+          background-color: white;
+          border-radius: 10px;
+        }
+
+        main {
+          grid-row-start: 4;
+          grid-row-end: 10;
+          grid-column-start: 1 ;
+          grid-column-end: 13;
+        }
+      
+        footer {
+          grid-row-start: 10;
+          grid-row-end: 13;
+          grid-column-start: 1 ;
+          grid-column-end: 13;
+        }
       /* Doe hier jouw ding! */
     </style>
   </head>

@@ -6,6 +6,41 @@
     <title>Basic Layout 3</title>
     <link rel="stylesheet" href="../style.css">
     <style>
+       body {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap:  10px ;
+        }
+
+        header {
+          grid-row-start: 11;
+          grid-row-end: 13;
+          grid-column-start: 1 ;
+          grid-column-end: 7;
+ 
+        }
+
+        nav {
+          grid-row-start: 11;
+          grid-row-end: 13;
+          grid-column-start: 7 ;
+          grid-column-end: 13;
+        }
+
+        main {
+          grid-row-start: 1;
+          grid-row-end: 9;
+          grid-column-start: 1 ;
+          grid-column-end: 13;
+        }
+      
+        footer {
+          grid-row-start: 9;
+          grid-row-end: 11;
+          grid-column-start: 1 ;
+          grid-column-end: 13;
+        }
       /* Doe hier jouw ding! */
     </style>
   </head>
